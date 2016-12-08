@@ -64,8 +64,13 @@ td {
         
         if((c1.textContent == c2.textContent) && (c2.textContent == c3.textContent) && (c1.textContent != "")){
             won=true;
-        }
-    }
+        c1.style.backgroundColor="#FF6347"; 
+        c2.style.backgroundColor="#FF6347"; 
+        c3.style.backgroundColor="#FF6347"; 
+        alert(player + "has won!"); } 
+}
+
+     
     
     function checkWin(){
         check3cells("1","2","3");
@@ -76,7 +81,7 @@ td {
         check3cells("3","6","9");
         check3cells("1","5","9");
         check3cells("3","5","7");
-    }
+    }   
     </script>
 
 </body>
