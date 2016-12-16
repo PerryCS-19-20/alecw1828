@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pythagorean Theorem:</title>
+    
+<link rel="stylesheet" type="text/css" href="style.css">           
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Pytagorean Theorem</title>
+        <script>
+            function calc() {
+                var a = parseFloat(document.getElementById("a").value);
+                var b = parseFloat(document.getElementById("b").value);
+                var c = document.getElementById("c");
+
+
+                var square = a * a;
+                var square2 = b * b;
+                var squareroot = Math.sqrt(square + square2);
+                c.value = squareroot;
+            }
+        </script>
+        <style>
+            input[type=number] {
+                width: 64px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pythagorean Theorem:</h1>
+        <img src="http://jwilson.coe.uga.edu/emt669/student.folders/morris.stephanie/emt.669/essay.1/image1.gif" style="float: left; height: 150px; margin-right: 5px;">
+        <h2>a^2+b^2=c^2</h2>
+        
+        a: <input type="number" id="a" placeholder="A Lengtht"><br>
+        b: <input type="number" id="b" placeholder="B Length">
+        <button onclick="calc();">Calculate</button>
+        <hr>
+        c: <input type="output" id="c" placeholder="C Length" readonly>
+    </body>
+    </body>
+</html>
