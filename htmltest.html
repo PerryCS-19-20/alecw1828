@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Html Test Zoney</title>
+    
+<link rel="stylesheet" type="text/css" href="style.css">           
+    </head>
+	<body>
+	<textarea rows="10" cols"80" id="inputText">Input html to test here</textarea>
+	<button onclick="clicked();">test!</button>
+		<span id="s1" >Hello</span>
+		<script>
+			function clicked() {
+				var theSpan = document.getElementById("s1");
+				var userInput = document.getElementById("inputText");
+				theSpan.textContent = userInput.value;
+			}
+		</script>
+	</body>
+</html>
