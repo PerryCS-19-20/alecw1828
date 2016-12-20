@@ -1,0 +1,58 @@
+#menubar a:link{
+	display: block;
+        color: black;
+	padding: 8px;
+	text-decoration: none;
+}
+#menubar {
+	position: relative;
+	padding: 0px;
+	display: block;
+        background-color: darkgrey;
+}
+
+#menubar a:active {
+        display: block;
+        color: black;
+	padding: 8px;
+	text-decoration: none;
+}
+
+#menubar a:hover {
+    color: blue;
+} 
+
+#menubar ul{
+        position: relative;
+	display:  inline-block;
+	text-decoration: none;
+	list-style-type: none;
+        margin: 0;
+        padding: 0;
+        color: grey;
+}
+
+#menubar ul > li {
+    display: inline-block;
+    padding: 8px;
+}
+
+#menubar a {
+	display: block;
+        color: grey;
+	padding: 8px;
+	text-decoration: none;
+}
+
+#menubar ul ul {
+	display: none;
+	position: absolute;
+        background-color: red;
+        padding: 0px;
+        color: black;
+}
+#menubar ul li:focus ul,
+#menubar ul li:hover ul,
+#menubar ul li:active ul {
+	display: block;
+}
