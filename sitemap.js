@@ -65,7 +65,7 @@
             createlist2.appendChild(list11);
             var a11 = document.createElement("a")
             a11.textContent = "Multipilication Table";
-            a11.href = "multiplicationTable.html"
+            a11.href = "multitable.html"
             list11.appendChild(a11);
             
     }
