@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+	<textarea rows="10" cols"80" id="inputText">Input html to test here</textarea>
+	<button onclick="clicked();">test!</button>
+		<script>
+			function clicked() {
+				var userInput = document.getElementById("inputText");
+				var item = document.createElement("li");
+				item.textContent = userInput.value;
+				list.appendChild(item);
+			}
+		</script>
+		<ul id= "list">
+		    <li>Get groceries</li>
+		</ul>
+	</body>
+</html>
