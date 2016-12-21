@@ -23,24 +23,19 @@
         Table Height:<input type="range" id="tableHeight" min="10" max="100" value="10" onchange="buildTimesTable();"><br>
         <script>
             function buildTimesTable() {
-                // Remove the multiplication table if it already exists.
                 var timesTable = document.getElementById("timesTable");
                 if (timesTable != null) {
                     timesTable.parentNode.removeChild(timesTable);        
                 }
-                // Create a table for the multiplication table
                 timesTable = document.createElement("table");
                 timesTable.id = "timesTable";            
                 
-                // Add the table to the document's body
                 var body = document.body;
                 body.appendChild(timesTable);
-                
-                // Get the table width and height
+
                 var width = document.getElementById("tableWidth").value;     
                 var height = document.getElementById("tableHeight").value;
                 
-                // Fill in the multiplication table
                 
                 for(var i = 0; i < height;i++){
                     var row = document.createElement("tr")
